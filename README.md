@@ -33,3 +33,6 @@ Before you begin, make sure you have the following installed on your system:
     - `--name mssql`: The `--name` option assigns the name "mssql" to the running container for easier reference.
     - `-d`: This option runs the container in detached mode, meaning it runs in the background.
     - `--restart unless-stopped`: This option specifies the container's restart policy to restart unless explicitly stopped. This ensures that the container automatically starts if the system reboots.
+
+   <br/>
+   <img src="https://github.com/faraguti/Docker-Commit-Push-Guide/assets/5418256/f34818fe-cfb4-4d47-be03-070910cde1f9" height="90%" width="90%">
