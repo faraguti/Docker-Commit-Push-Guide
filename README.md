@@ -40,4 +40,16 @@ Before you begin, make sure you have the following installed on your system:
 <br><br/>
 2. **Make Changes to the Container:**
 
-  Enter the running container to make the necessary changes. For example, you can install additional software, modify configuration files, or add files to the container.
+  In Step 2, you can make any desired changes to the running container. For example, you might install additional software, modify configurations, or create sample data. Use the container interactively or execute commands directly on it.
+
+  Once you have made the necessary changes, you need to create a new Docker image based on the modified container. To do this, we will use the `docker commit` command.
+  ```
+  docker commit mssql my-modified-mssql:v1.0
+  ```
+
+  > [!NOTE]
+  > **Breakdown of the docker commit command:**
+
+  - `mssql`: This is the name of the running container you want to commit.
+  - `my-modified-mssql`: This is the name you give to the new Docker image. You can replace this with a name of your choice.
+  - `v1.0`: This is the tag assigned to the new image. You can use different tags to manage different versions of the image.
