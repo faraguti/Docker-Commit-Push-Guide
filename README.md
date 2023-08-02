@@ -103,7 +103,7 @@ Before you begin, make sure you have the following installed on your system:
   ```
   The container will now be created based on the modified image you pushed to Docker Hub, and you can continue using it with the updated configurations and changes.
 
-<br>
+</br>
 #### Conclusion:
 
 This guide simplifies the process of using `docker commit` to create a new Docker image from changes made to a running container and pushing it to Docker Hub. It enables effortless sharing of custom container configurations, ensuring consistency across different setups.
