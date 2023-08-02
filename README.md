@@ -1,4 +1,4 @@
-## Docker Container Commit and Push to Docker Hub
+# Docker Container Commit and Push to Docker Hub
 <br/>
 
 This repository provides a step-by-step guide on how to use `docker commit` to create a new Docker image from changes made to a container and push it to Docker Hub.
