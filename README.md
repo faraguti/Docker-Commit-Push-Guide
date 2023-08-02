@@ -77,7 +77,7 @@ Before you begin, make sure you have the following installed on your system:
   ```
   docker push your-docker-id/my-modified-mssql:v1.0
   ```
-  > [!NOTE]
+  > [!IMPORTANT]
   > Replace `your-docker-id` with your Docker Hub username and `my-modified-mssql` with the name of the image you used in the `docker commit` command. The `v1.0` tag indicates that you are pushing that specific version of the image.
 
   The `docker push` command uploads the image to your Docker Hub account, making it available for others to use.
