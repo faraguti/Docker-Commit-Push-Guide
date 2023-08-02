@@ -102,3 +102,10 @@ Before you begin, make sure you have the following installed on your system:
   docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=1StrongPassword!" -e "MSSQL_AGENT_ENABLED=true" -p 49433:1433 --name mssql -d --restart unless-stopped your-docker-id/my-modified-mssql:v1.0
   ```
   The container will now be created based on the modified image you pushed to Docker Hub, and you can continue using it with the updated configurations and changes.
+
+<br></br>
+#### Conclusion:
+
+This guide simplifies the process of using `docker commit` to create a new Docker image from changes made to a running container and pushing it to Docker Hub. It enables effortless sharing of custom container configurations, ensuring consistency across different setups.
+
+Your contributions are welcome to improve this guide. Happy containerizing and coding! 🐳🚀
