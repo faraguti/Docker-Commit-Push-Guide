@@ -1,4 +1,3 @@
-<details>
 <summary><strong>Docker Container Commit and Push to Docker Hub</strong></summary>
 <br>
 
