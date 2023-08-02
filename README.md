@@ -53,7 +53,7 @@ Before you begin, make sure you have the following installed on your system:
   - `your-docker-id`: This is your Docker Hub username.
   - `mssql`: This is the name of the running container you want to commit.
   - `my-modified-mssql`: This is the name you give to the new Docker image. You can replace this with a name of your choice.
-  - `v1.0`: This is the tag assigned to the new image. You can use different tags to manage different versions of the image.
+  - `v1.0`: This is the tag that I assigned to the new image. You can use any other tags to manage different versions of the image.
 
   The `docker commit` command creates a new Docker image that includes all the changes you made to the container. You can verify the new image using `docker images` command.
   
@@ -78,7 +78,7 @@ Before you begin, make sure you have the following installed on your system:
   docker push your-docker-id/my-modified-mssql:v1.0
   ```
   > [!NOTE]
-  > Replace `your-docker-id` with your Docker Hub username and `my-modified-mssql` with the name of the image you used in the `docker commit` command. The `v1.0` tag indicates that you are pushing another version of the image.
+  > Replace `your-docker-id` with your Docker Hub username and `my-modified-mssql` with the name of the image you used in the `docker commit` command. The `v1.0` tag indicates that you are pushing that specific version of the image.
 
   The `docker push` command uploads the image to your Docker Hub account, making it available for others to use.
 
@@ -98,5 +98,7 @@ Before you begin, make sure you have the following installed on your system:
   > **Replace your-docker-id with your Docker Hub username, and my-modified-mssql with the name of the image you used in the docker commit command. The v1.0 tag indicates that you want to pull that specific version of the image.**
 
   Once the image is successfully pulled, you can use it with the same docker run command you used earlier, but this time change the image link to the one you just pulled from Docker Hub:
-
-
+  ```
+  docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=1StrongPassword!" -e "MSSQL_AGENT_ENABLED=true" -p 49433:1433 --name mssql -d --restart unless-stopped your-docker-id/my-modified-mssql:v1.0
+  ```
+  The container will now be created based on the modified image you pushed to Docker Hub, and you can continue using it with the updated configurations and changes.
