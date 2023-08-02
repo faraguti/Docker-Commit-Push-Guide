@@ -18,21 +18,25 @@ Before you begin, make sure you have the following installed on your system:
 
 1. **Create the Container:**
 
-   In Step 1, we will create a new Docker container using the official Microsoft SQL Server (mssql) container image from Docker Hub. The docker run command used in the guide sets up the container with specific configurations:
-   ```
-   docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=1StrongPassword!" -e "MSSQL_AGENT_ENABLED=true" -p 49433:1433 --name mssql -d --restart unless-stopped mcr.microsoft.com/mssql/server
-   ```
-
-   > [!NOTE]
-   > **Breakdown of the docker run command:**
+  In Step 1, we will create a new Docker container using the official Microsoft SQL Server (mssql) container image from Docker Hub. The docker run command used in the guide sets up the container with specific configurations:
+  ```
+  docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=1StrongPassword!" -e "MSSQL_AGENT_ENABLED=true" -p 49433:1433 --name mssql -d --restart unless-stopped mcr.microsoft.com/mssql/server
+  ```
+  
+  > [!NOTE]
+  > > **Breakdown of the docker run command:**
     
-    - `-e "ACCEPT_EULA=Y"`: This environment variable is set to "Y", which accepts the End-User License Agreement (EULA) for Microsoft SQL Server.
-    - `-e "SA_PASSWORD=1StrongPassword!"`: This environment variable sets the password for the "SA" (System Administrator) account in SQL Server to "1StrongPassword!". Using a weak password may prevent the container from starting. Prioritize a strong password to ensure security and avoid authentication issues.
-    - `-e "MSSQL_AGENT_ENABLED=true"`: This environment variable enables the SQL Server Agent service within the container.
-    - `-p 49433:1433`: This option maps port 49433 on the host machine to port 1433 inside the container. Port 1433 is the default port used by SQL Server for communication, so this mapping allows access to the SQL Server instance running inside the container.
-    - `--name mssql`: The `--name` option assigns the name "mssql" to the running container for easier reference.
-    - `-d`: This option runs the container in detached mode, meaning it runs in the background.
-    - `--restart unless-stopped`: This option specifies the container's restart policy to restart unless explicitly stopped. This ensures that the container automatically starts if the system reboots.
+  - `-e "ACCEPT_EULA=Y"`: This environment variable is set to "Y", which accepts the End-User License Agreement (EULA) for Microsoft SQL Server.
+  - `-e "SA_PASSWORD=1StrongPassword!"`: This environment variable sets the password for the "SA" (System Administrator) account in SQL Server to "1StrongPassword!". Using a weak password may prevent the container from starting. Prioritize a strong password to ensure security and avoid authentication issues.
+  - `-e "MSSQL_AGENT_ENABLED=true"`: This environment variable enables the SQL Server Agent service within the container.
+  - `-p 49433:1433`: This option maps port 49433 on the host machine to port 1433 inside the container. Port 1433 is the default port used by SQL Server for communication, so this mapping allows access to the SQL Server instance running inside the container.
+  - `--name mssql`: The `--name` option assigns the name "mssql" to the running container for easier reference.
+  - `-d`: This option runs the container in detached mode, meaning it runs in the background.
+  - `--restart unless-stopped`: This option specifies the container's restart policy to restart unless explicitly stopped. This ensures that the container automatically starts if the system reboots.
 
-   <br/>
-   <img src="https://github.com/faraguti/Docker-Commit-Push-Guide/assets/5418256/f34818fe-cfb4-4d47-be03-070910cde1f9" height="90%" width="90%">
+  <br/>
+  <img src="https://github.com/faraguti/Docker-Commit-Push-Guide/assets/5418256/f34818fe-cfb4-4d47-be03-070910cde1f9" height="90%" width="90%">
+
+2. **Make Changes to the Container:**
+
+  Enter the running container to make the necessary changes. For example, you can install additional software, modify configuration files, or add files to the container.
