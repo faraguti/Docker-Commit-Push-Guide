@@ -23,7 +23,7 @@ Before you begin, make sure you have the following installed on your system:
    docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=cit326Password$" -e "MSSQL_AGENT_ENABLED=true" -p 49433:1433 --name mssql -d --restart unless-stopped mcr.microsoft.com/mssql/server
    ```
 
-   > [!NOTE]   **Breakdown of the docker run command:**
+   > [!NOTE]
 
 
     - `-e "ACCEPT_EULA=Y"`: This environment variable is set to "Y", which accepts the End-User License Agreement (EULA) for Microsoft SQL Server.
