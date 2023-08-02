@@ -23,7 +23,7 @@ Before you begin, make sure you have the following installed on your system:
   docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=1StrongPassword!" -e "MSSQL_AGENT_ENABLED=true" -p 49433:1433 --name mssql -d --restart unless-stopped mcr.microsoft.com/mssql/server
   ```
   
-  > [!NOTE]
+  > [!IMPORTANT]
   > **Breakdown of the docker run command:**
     
   - `-e "ACCEPT_EULA=Y"`: This environment variable is set to "Y", which accepts the End-User License Agreement (EULA) for Microsoft SQL Server.
@@ -47,7 +47,7 @@ Before you begin, make sure you have the following installed on your system:
   docker commit mssql my-modified-mssql:v1.0
   ```
 
-  > [!NOTE]
+  > [!IMPORTANT]
   > **Breakdown of the docker commit command:**
 
   - `mssql`: This is the name of the running container you want to commit.
