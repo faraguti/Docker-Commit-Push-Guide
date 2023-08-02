@@ -55,6 +55,9 @@ Before you begin, make sure you have the following installed on your system:
   - `v1.0`: This is the tag assigned to the new image. You can use different tags to manage different versions of the image.
 
   The `docker commit` command creates a new Docker image that includes all the changes you made to the container. You can verify the new image using `docker images` command.
+  <br/>
+  <img src="https://github.com/faraguti/Docker-Commit-Push-Guide/assets/5418256/497a634b-b57f-4296-8c78-6dcf50289802" height="90%" width="90%">
+
   
 <br><br/>
 3. **Push the Image to Docker Hub:**
