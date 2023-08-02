@@ -44,12 +44,13 @@ Before you begin, make sure you have the following installed on your system:
 
   Once you have made the necessary changes, you need to create a new Docker image based on the modified container. To do this, we will use the `docker commit` command.
   ```
-  docker commit mssql my-modified-mssql:v1.0
+  docker commit mssql your-docker-id/my-modified-mssql:v1.0
   ```
 
   > [!IMPORTANT]
   > **Breakdown of the docker commit command:**
 
+  - `your-docker-id`: This is your Docker Hub username.
   - `mssql`: This is the name of the running container you want to commit.
   - `my-modified-mssql`: This is the name you give to the new Docker image. You can replace this with a name of your choice.
   - `v1.0`: This is the tag assigned to the new image. You can use different tags to manage different versions of the image.
@@ -57,7 +58,7 @@ Before you begin, make sure you have the following installed on your system:
   The `docker commit` command creates a new Docker image that includes all the changes you made to the container. You can verify the new image using `docker images` command.
   
   <br/>
-  <img src="https://github.com/faraguti/Docker-Commit-Push-Guide/assets/5418256/497a634b-b57f-4296-8c78-6dcf50289802" height="90%" width="90%">
+  <img src="https://github.com/faraguti/Docker-Commit-Push-Guide/assets/5418256/dafbcfa1-69b0-40b5-b310-3f815f39f119" height="90%" width="90%">
 
   
 <br><br/>
@@ -67,11 +68,22 @@ Before you begin, make sure you have the following installed on your system:
   ```
   docker login
   ```
-  After running the `docker login` command, enter your Docker Hub credentials (username and password) when prompted. Once you are logged in, you can push the image to Docker Hub using the `docker push` command.
+  After running the `docker login` command, enter your Docker Hub credentials (username and password) when prompted.
 
   > [!NOTE]
   > **Security Note:** When entering your password during the `docker login` command, the characters will not be displayed on the screen for security reasons. Simply type the password and press Enter without expecting visible feedback.
 
+  Once you are logged in, you can push the image to Docker Hub using the `docker push` command.
+  ```
+  docker push your-docker-id/my-modified-mssql:v1.0
+  ```
+  > [!NOTE]
+  > Replace `your-docker-id` with your Docker Hub username and `my-modified-mssql` with the name of the image you used in the `docker commit` command. The `v1.0` tag indicates that you are pushing another version of the image.
+
+  The `docker push` command uploads the image to your Docker Hub account, making it available for others to use.
+
+  <br/>
+  <img src="https://github.com/faraguti/Docker-Commit-Push-Guide/assets/5418256/044f0dc8-7161-4519-9eaf-170985dfc9c9" height="90%" width="90%">
 
 
 
