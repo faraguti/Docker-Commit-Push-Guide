@@ -24,7 +24,7 @@ Before you begin, make sure you have the following installed on your system:
   ```
   
   > [!NOTE]
-  > > **Breakdown of the docker run command:**
+  > **Breakdown of the docker run command:**
     
   - `-e "ACCEPT_EULA=Y"`: This environment variable is set to "Y", which accepts the End-User License Agreement (EULA) for Microsoft SQL Server.
   - `-e "SA_PASSWORD=1StrongPassword!"`: This environment variable sets the password for the "SA" (System Administrator) account in SQL Server to "1StrongPassword!". Using a weak password may prevent the container from starting. Prioritize a strong password to ensure security and avoid authentication issues.
