@@ -36,8 +36,8 @@ Before you begin, make sure you have the following installed on your system:
 
   <br/>
   <img src="https://github.com/faraguti/Docker-Commit-Push-Guide/assets/5418256/f34818fe-cfb4-4d47-be03-070910cde1f9" height="90%" width="90%">
-  <br/>
-
+  
+<br/>
 2. **Make Changes to the Container:**
 
   Enter the running container to make the necessary changes. For example, you can install additional software, modify configuration files, or add files to the container.
