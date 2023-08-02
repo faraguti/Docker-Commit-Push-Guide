@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/faraguti/Docker-Commit-Push-Guide/assets/5418256/fae1ed83-52fe-493b-aa0a-4f22d182aee7" height="100%" width="100%">
+</p>
+
 # Docker Container Commit and Push to Docker Hub
 <br/>
 
