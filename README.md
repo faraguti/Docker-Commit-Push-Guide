@@ -53,3 +53,21 @@ Before you begin, make sure you have the following installed on your system:
   - `mssql`: This is the name of the running container you want to commit.
   - `my-modified-mssql`: This is the name you give to the new Docker image. You can replace this with a name of your choice.
   - `v1.0`: This is the tag assigned to the new image. You can use different tags to manage different versions of the image.
+
+  The `docker commit` command creates a new Docker image that includes all the changes you made to the container. You can verify the new image using `docker images` command.
+
+3. **Push the Image to Docker Hub:**
+
+  In Step 3, we will push the newly created Docker image to Docker Hub. First, you need to log in to your Docker Hub account using the `docker login` command.
+  ```
+  docker login
+  ```
+  After running the `docker login` command, enter your Docker Hub credentials (username and password) when prompted. Once you are logged in, you can push the image to Docker Hub using the `docker push` command.
+
+  > [!NOTE]
+  > **Security Note:** When entering your password during the `docker login` command, the characters will not be displayed on the screen for security reasons. Simply type the password and press Enter without expecting visible feedback.
+
+
+
+
+
