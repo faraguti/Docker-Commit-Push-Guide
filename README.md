@@ -94,7 +94,7 @@ Before you begin, make sure you have the following installed on your system:
     docker pull your-docker-id/my-modified-mssql:v1.0
     ```
     
-  > [!NOTE]
+  > [!IMPORTANT]
   > **Replace your-docker-id with your Docker Hub username, and my-modified-mssql with the name of the image you used in the docker commit command. The v1.0 tag indicates that you want to pull that specific version of the image.**
 
   Once the image is successfully pulled, you can use it with the same docker run command you used earlier, but this time change the image link to the one you just pulled from Docker Hub:
