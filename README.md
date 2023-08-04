@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/faraguti/Docker-Commit-Push-Guide/assets/5418256/6fd6bda6-987e-4383-af25-b61d7d849d97" height="100%" width="100%">
+  <img src="https://github.com/faraguti/Docker-Commit-Push-Guide/assets/5418256/54ce6361-da23-43c0-86a1-f6e98b8852d7" height="100%" width="100%">
 </p>
 
 ### [YouTube Demonstration](https://www.youtube.com/watch?v=OWNaJsFkX4w)
