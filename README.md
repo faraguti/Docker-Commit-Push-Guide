@@ -45,7 +45,7 @@ Before you begin, make sure you have the following installed on your system:
   In Step 2, you can make any desired changes to the running container. For example, you might install additional software, modify configurations, or create sample data. Use the container interactively or execute commands directly on it.
 
   Once you have made the necessary changes, you need to create a new Docker image based on the modified container. To do this, we will use the `docker commit` command.
-  ```
+  ```Dockerfile
   docker commit mssql your-docker-id/my-modified-mssql:v1.0
   ```
 
@@ -67,7 +67,7 @@ Before you begin, make sure you have the following installed on your system:
 3. **Push the Image to Docker Hub:**
 
   In Step 3, we will push the newly created Docker image to Docker Hub. First, you need to log in to your Docker Hub account using the `docker login` command.
-  ```
+  ```Dockerfile
   docker login
   ```
   After running the `docker login` command, enter your Docker Hub credentials (username and password) when prompted.
@@ -76,7 +76,7 @@ Before you begin, make sure you have the following installed on your system:
   > **Security Note:** When entering your password during the `docker login` command, the characters will not be displayed on the screen for security reasons. Simply type the password and press Enter without expecting visible feedback.
 
   Once you are logged in, you can push the image to Docker Hub using the `docker push` command.
-  ```
+  ```Dockerfile
   docker push your-docker-id/my-modified-mssql:v1.0
   ```
   > [!IMPORTANT]
