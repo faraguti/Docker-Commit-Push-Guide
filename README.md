@@ -21,7 +21,7 @@ Before you begin, make sure you have the following installed on your system:
 1. **Create the Container:**
 
   In Step 1, we will create a new Docker container using the official Microsoft SQL Server (mssql) container image from Docker Hub. The docker run command used in the guide sets up the container with specific configurations:
-  ```
+  ```Dockerfile
   docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=1StrongPassword!" -e "MSSQL_AGENT_ENABLED=true" -p 49433:1433 --name mssql -d --restart unless-stopped mcr.microsoft.com/mssql/server
   ```
   
